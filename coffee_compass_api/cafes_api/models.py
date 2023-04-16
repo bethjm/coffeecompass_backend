@@ -8,7 +8,7 @@ class Shops(models.Model):
     online_order = models.CharField(max_length=150)
     address = models.CharField(max_length=150)
     description = models.CharField(max_length=1000)
-    flavor_notes = models.CharField(max_length=10)
+    flavor_notes = models.CharField(max_length=15)
 
 class Comments(models.Model):
     person_name = models.CharField(max_length=100)
