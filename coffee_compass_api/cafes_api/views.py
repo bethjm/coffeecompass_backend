@@ -14,11 +14,3 @@ class ShopsList(generics.ListCreateAPIView):
 class ShopsDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Shops.objects.all().order_by('id')
     serializer_class = ShopsSerializer
-
-class CommentsList(generics.ListCreateAPIView):
-    queryset = Comments.objects.all().order_by('id') # tell django how to retrieve all objects from the DB, order by id ascending
-    serializer_class = CommentsSerializer # tell django what serializer to use
-
-class CommentsDetail(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Comments.objects.all().order_by('id')
-    serializer_class = CommentsSerializer
