@@ -4,4 +4,4 @@ from .models import Shops
 class ShopsSerializer(serializers.ModelSerializer): 
     class Meta:
         model = Shops 
-        fields = ('id', 'photo', 'name','online_order', 'address', 'description','sweet', 'acidic', 'floral', 'citrus', 'berry', 'chocolate', 'caramel', 'smoky', 'bitter', 'best_type', 'price')
+        fields = ('id', 'photo', 'name','online_order', 'address', 'description','sweet', 'acidic', 'floral', 'citrus', 'berry', 'chocolate', 'caramel', 'smoky', 'bitter', 'price')

@@ -16,5 +16,4 @@ class Shops(models.Model):
     caramel = models.IntegerField(null=True)
     smoky = models.IntegerField(null=True)
     bitter = models.IntegerField(null=True)
-    best_type = models.CharField(max_length=100, null=True)
     price = models.DecimalField(max_digits=6, decimal_places=2, null=True)
